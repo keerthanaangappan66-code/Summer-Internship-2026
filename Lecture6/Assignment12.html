@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Navbar Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#131921;
+    padding:15px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+    padding:10px 15px;
+    border:none;
+    background:#febd69;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+}
+
+.signin,
+.cart{
+    background:#febd69;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.signin:hover,
+.cart:hover,
+.search-box button:hover{
+    background:#f3a847;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .search-box{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        Amazon
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Amazon">
+        <button>🔍</button>
+    </div>
+
+    <button class="signin">
+        Sign In
+    </button>
+
+    <button class="cart">
+        🛒 Cart
+    </button>
+
+</nav>
+
+</body>
+</html>
