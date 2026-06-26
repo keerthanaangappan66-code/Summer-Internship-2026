@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Section</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+.navbar{
+    background:#131921;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search-bar{
+    display:flex;
+    flex:1;
+    max-width:500px;
+}
+
+.search-bar input{
+    flex:1;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+.search-bar button{
+    padding:10px 20px;
+    border:none;
+    background:#febd69;
+    cursor:pointer;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+}
+
+.category-menu{
+    background:#232f3e;
+    padding:12px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.category-menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    transition:0.3s;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.card p{
+    color:green;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.card button{
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .search-bar{
+        width:100%;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Amazon</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search Products">
+            <button>Search</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+        </div>
+    </nav>
+    <div class="category-menu">
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Books</a>
+        <a href="#">Home</a>
+        <a href="#">Beauty</a>
+        <a href="#">Sports</a>
+        <a href="#">Toys</a>
+    </div>
+<section class="products">
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Wireless Headphones">
+    <h3>Wireless Headphones</h3>
+    <p>₹1,999</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300" alt="Smart Watch">
+    <h3>Smart Watch</h3>
+    <p>₹2,499</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=400" alt="Bluetooth Speaker">
+    <h3>Bluetooth Speaker</h3>
+    <p>₹1,299</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400" alt="Gaming Mouse">
+    <h3>Gaming Mouse</h3>
+    <p>₹899</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Laptop Bag">
+    <h3>Laptop Bag</h3>
+    <p>₹799</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400" alt="Keyboard">
+    <h3>Keyboard</h3>
+    <p>₹1,199</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400" alt="Monitor">
+    <h3>Monitor</h3>
+    <p>₹8,999</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1580894908361-967195033215?w=400" alt="USB Drive">
+    <h3>USB Drive</h3>
+    <p>₹499</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Phone Stand">
+    <h3>Phone Stand</h3>
+    <p>₹299</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1601593346740-925612772716?w=400" alt="Phone Case">
+    <h3>Phone Case</h3>
+    <p>₹399</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=350" alt="Tripod">
+    <h3>Tripod</h3>
+    <p>₹699</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400" alt="Web Camera">
+    <h3>Web Camera</h3>
+    <p>₹1,599</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400" alt="Office Chair">
+    <h3>Office Chair</h3>
+    <p>₹4,999</p>
+    <button>Buy Now</button>
+</div>
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400" alt="Study Table">
+    <h3>Study Table</h3>
+    <p>₹6,499</p>
+    <button>Buy Now</button>
+</div>
+
+</section>
+
+</body>
+</html>
